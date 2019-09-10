@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <link rel="stylesheet" href="../index.css">
+  <title>Femex | View Product</title>
+</head>
+<body>
+  <h1 class="sr-only">Product page</h1>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <h2 class="sr-only">navigation bar</h2>
+
+    <div class="container">
+      <a class="navbar-brand mr-lg-4" href="../index.html">
+        <img src="../img/logo.png" alt="Femex logo" width="110">
+      </a> <!-- logo -->
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse" aria-controls="collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> <!-- menu icon -->
+    
+      <div class="collapse navbar-collapse" id="collapse">
+        <ul class="navbar-nav pl-2 pl-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">New Arrivals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="women-clothes.html">Women</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#">Men</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kids</a>
+          </li>
+        </ul> <!-- navigation list -->
+        <form class="form-inline my-2 my-lg-0 mx-auto">
+          <label class="p-2 mr-2" for="navbar__searchInput">
+            <i class="fas fa-search" aria-hidden="true"></i>
+          </label>
+          <input class="navbar__searchInput" id="navbar__searchInput" type="search" placeholder="Search..." aria-label="Search">
+        </form> <!-- search form -->
+        <span class="navbar-text d-flex">
+          <a href="#" class="navbar__userLink">
+            <i class="navbar__iconLink fas fa-shopping-cart fa-lg" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="navbar__userLink">
+            <i class="navbar__iconLink fas fa-user fa-lg" aria-hidden="true"></i>
+          </a>
+        </span>
+      </div> <!-- collapse -->
+    </div> <!-- container -->
+  </nav> <!-- navbar -->
+
+  <!-- breadcrumb bar -->
+  <div class="breadcrumbBar">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="d-flex align-items-center mb-3  mb-md-0">
+        <a href="#" class="breadcrumbBar__brandLink link_decorationOnHover_none">
+          <i class="fas fa-chevron-left fa-lg mr-3" aria-hidden="true"></i>
+          <img class="" src="../img/brand.png" alt="Le Collezioni">
+        </a>
+        <a href="#" class="breadcrumbBar__downArrowLink link_decorationOnHover_none">
+          <i class="fas fa-chevron-down" aria-hidden="true"></i>
+        </a>
+      </div> <!-- left -->
+
+      <nav aria-label="breadcrumb">
+        <h2 class="sr-only">breadcrumb bar</h2>
+        <ol class="breadcrumb bg-transparent mb-0">
+          <il class="breadcrumb-item"><a class="text-white" href="#">Home</a></il>
+          <il class="breadcrumb-item"><a class="text-white" href="#">Brands</a></il>
+          <il class="breadcrumb-item"><a class="text-white" href="#">Le Collezioni</a></il>
+        </ol> <!-- breadcrumb list -->
+      </nav> <!-- right -->
+    </div> <!-- container -->
+  </div> <!-- breadcrumbbar -->
+
+  <!-- product banner -->
+  <div class="productBanner">
+    <img class="img-fluid" src="../img/product.png" alt="product image">
+  </div> <!-- banner -->
+
+  <!-- product details -->
+  <article class="productDetails py-5">
+    <header class="container  py-4">
+      <div class="row justify-content-between">
+        <div class="col-md-6">
+          <h2 class="mb-2">Bounce Back Floral Khaki Green Denim Shorts</h2>
+          <s class="productDetails__oldPrice mr-3">1950$</s>
+          <span class="productDetails__newPrice">1500$</span>
+        </div> <!-- data -->
+        <div class="col-md-6 col-lg-4 mt-4 mt-md-0">
+          <img class="img-fluid" src="../img/product.png" alt="">
+        </div> <!-- img -->
+      </div> <!-- row -->
+    </header> <!-- product header -->
+
+    <hr>
+
+    <div class="container py-4">
+      <div class="row justify-content-between">
+        <div class="col-md-6 mb-5">
+          <p class="productDetails__description mb-4">
+            At totam ut quis sapiente qui facilis. Non officia ut sunt quisquam rem voluptas est et repellendus. Aut voluptatem autem. Eos repellendus sit voluptatem. Non officia ut sunt quisquam rem voluptas est et repellendus. Aut voluptatem autem. Eos repellendus sit voluptatem. Eos repellendus sit voluptatem. Non officia ut sunt quisquam rem voluptas est et repellendus. Aut voluptatem autem. Eos repellendus sit voluptatem. Non officia ut sunt quisquam rem voluptas est et repellendus. Aut voluptatem autem. Eos repellendus sit voluptatem.
+          </p>
+          </p>
+          <a class="link_color_inherited font-weight-md link_decorationOnHover_none link_decoration_bottomBorder py-1" href="#">More details</a>
+        </div>
+        <form class="col-md-5">
+          <div class="form-group mb-1">
+            <label class="selectContainer">
+              <span class="selectContainer__label position-absolute">Select Color</span>
+              <select class="select">
+                <option selected>blue</option>
+                <option>grey</option>
+                <option>black</option>
+              </select>
+              <i class="fas fa-chevron-down selectContainer__downArrow position-absolute" aria-hidden="true"></i>
+            </label>
+          </div>
+          <div class="form-group mb-1">
+            <label class="selectContainer">
+              <span class="selectContainer__label position-absolute">Select Size</span>
+              <select class="select">
+                <option selected>xxs</option>
+                <option>xs</option>
+                <option>s</option>
+                <option>m</option>
+                <option>l</option>
+                <option>xl</option>
+                <option>xxl</option>
+              </select>
+              <i class="fas fa-chevron-down selectContainer__downArrow position-absolute" aria-hidden="true"></i>
+            </label>
+          </div>
+          <div class="form-group mb-1">
+            <label class="selectContainer">
+              <span class="selectContainer__label position-absolute">Select Quantity</span>
+              <select class="select">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option selected>5</option>
+                <option>6</option>
+                <option>7</option>
+              </select>
+              <i class="fas fa-chevron-down selectContainer__downArrow position-absolute" aria-hidden="true"></i>
+            </label>
+          </div>
+          <button class="productForm__btn productForm__btn_bg_black mb-2">
+            <i class="fas fa-shopping-cart fa-lg mr-3" aria-hidden="true"></i>
+            Add to cart
+          </button>
+          <button class="productForm__btn">
+            Check Availability at your nearest store
+          </button>
+        </form>
+      </div> <!-- row -->
+    </div> <!-- details & form filters -->
+
+    <hr>
+    
+    <div class="relatedProducts container pt-5">
+      <h3 class="relatedProducts__title">
+        <span class="title-1 d-block mb-2">Related</span>
+        <span class="title-2 d-block" style="font-size: 1.75rem">Products</span>
+      </h3>
+
+      <ul class="list gallery row mt-5 mb-3 justify-content-center">
+        <li class="product col-8 col-sm-6 col-md-3 mb-4">
+          <img src="../img/gallery-1.png" alt="Gallery image" class="product__image">
+          <span class="product__collection">Le Colllezioni</span>
+          <h4 class="product__name">Cadapetra Hoodie</h4>
+          <span class="product__price font-weight-md">99.95$</span>
+        </li>
+        <li class="product col-8 col-sm-6 col-md-3 mb-4">
+          <img src="../img/gallery-2.png" alt="Gallery image" class="product__image">
+          <span class="product__collection">Le Colllezioni</span>
+          <h4 class="product__name">Cadapetra Hoodie</h4>
+          <span class="product__price font-weight-md">99.95$</span>
+        </li>
+        <li class="product col-8 col-sm-6 col-md-3 mb-4">
+          <img src="../img/gallery-3.png" alt="Gallery image" class="product__image">
+          <span class="product__collection">Le Colllezioni</span>
+          <h4 class="product__name">Cadapetra Hoodie</h4>
+          <span class="product__price font-weight-md">99.95$</span>
+        </li>
+        <li class="product col-8 col-sm-6 col-md-3 mb-4">
+          <img src="../img/gallery-4.png" alt="Gallery image" class="product__image">
+          <span class="product__collection">Le Colllezioni</span>
+          <h4 class="product__name">Cadapetra Hoodie</h4>
+          <span class="product__price font-weight-md">99.95$</span>
+        </li>
+        <li class="product col-8 col-sm-6 col-md-3 mb-4">
+          <img src="../img/gallery-1.png" alt="Gallery image" class="product__image">
+          <span class="product__collection">Le Colllezioni</span>
+          <h4 class="product__name">Cadapetra Hoodie</h4>
+          <span class="product__price font-weight-md">99.95$</span>
+        </li>
+        <li class="product col-8 col-sm-6 col-md-3 mb-4">
+          <img src="../img/gallery-6.png" alt="Gallery image" class="product__image">
+          <span class="product__collection">Le Colllezioni</span>
+          <h4 class="product__name">Cadapetra Hoodie</h4>
+          <span class="product__price font-weight-md">99.95$</span>
+        </li>
+        <li class="product col-8 col-sm-6 col-md-3 mb-4">
+          <img src="../img/gallery-7.png" alt="Gallery image" class="product__image">
+          <span class="product__collection">Le Colllezioni</span>
+          <h4 class="product__name">Cadapetra Hoodie</h4>
+          <span class="product__price font-weight-md">99.95$</span>
+        </li>
+        <li class="product col-8 col-sm-6 col-md-3 mb-4">
+          <img src="../img/gallery-8.png" alt="Gallery image" class="product__image">
+          <span class="product__collection">Le Colllezioni</span>
+          <h4 class="product__name">Cadapetra Hoodie</h4>
+          <span class="product__price font-weight-md">99.95$</span>
+        </li>
+      </ul> <!-- related products gallery -->
+
+      <div class="text-center">
+        <a class="call-to-action-with-underline" href="#">Explore more</a>
+      </div> <!-- call to action link (eplore) -->
+    </div> <!-- related products -->
+  </article>
+
+  <!-- features -->
+  <section class="featureSection">
+    <h2 class="sr-only">features</h2>
+
+    <div class="container">
+      <ul class="row list">
+        <li class="col-sm-6 col-lg-3 mb-4">
+          <div class="row align-items-center justify-content-center"> <!-- nested row -->
+            <div class="feature__iconContainer">
+              <i class="fas fa-shipping-fast fa-lg m-auto" aria-hidden="true"></i>
+            </div> <!-- image -->
+            <div class="col-6 col-sm-9 col-md-7 col-lg-9 text-white">
+              <p class="text-uppercase mb-2">Free shipping</p>
+              <p class="mb-0">While not exactly line</p>
+            </div> <!-- text -->
+          </div>
+        </li>
+        <li class="col-sm-6 col-lg-3 mb-4">
+            <div class="row align-items-center justify-content-center"> <!-- nested row -->
+              <div class="feature__iconContainer">
+                <i class="fas fa-dollar-sign fa-lg m-auto" aria-hidden="true"></i>
+              </div> <!-- image -->
+              <div class="col-6 col-sm-9 col-md-7 col-lg-9 text-white">
+                <p class="text-uppercase mb-2">Save 50% up</p>
+                <p class="mb-0">While not exactly line</p>
+              </div> <!-- text -->
+            </div>
+          </li>
+          <li class="col-sm-6 col-lg-3 mb-4">
+          <div class="row align-items-center justify-content-center"> <!-- nested row -->
+            <div class="feature__iconContainer">
+              <i class="fas fa-credit-card fa-lg m-auto" aria-hidden="true"></i>
+            </div> <!-- image -->
+            <div class="col-6 col-sm-9 col-md-7 col-lg-9 text-white">
+              <p class="text-uppercase mb-2">Online pay</p>
+              <p class="mb-0">While not exactly line</p>
+            </div> <!-- text -->
+          </div>
+        </li>
+        <li class="col-sm-6 col-lg-3 mb-4">
+          <div class="row align-items-center justify-content-center"> <!-- nested row -->
+            <div class="feature__iconContainer">
+              <i class="fas fa-map-marker-alt fa-lg m-auto" aria-hidden="true"></i>
+            </div> <!-- image -->
+            <div class="col-6 col-sm-9 col-md-7 col-lg-9 text-white">
+              <p class="text-uppercase mb-2">Track order</p>
+              <p class="mb-0">While not exactly line</p>
+            </div> <!-- text -->
+          </div>
+        </li>
+      </ul> <!-- feature list -->
+    </div> <!-- container -->
+  </section> <!-- feature section -->
+  
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-md-6 col-lg-7 mb-4 mb-md-0">
+          <img class="mb-3" src="../img/footer-logo.jpeg" alt="Femex logo" width="130">
+          <span class="text-uppercase display-4 d-none">Femex</span>
+          <p class="footer__paragraph my-3">
+            Et porro similique et odio dolores nihil. Voluptas numquam a eaque numquam. Qui numquam enim vel tenetur commodi voluptatum temporibus. Qui iste mollitia perspiciatis.
+          </p>
+          <ul class="list footer__brandList row my-4">
+            <li class="footer__brand col-6 col-sm-2 col-md-4 col-lg-2 mb-3 px-3">
+              <img class="img-fluid" src="../img/footer-brand-1.jpeg" alt="partner logo">
+            </li>
+            <li class="footer__brand col-6 col-sm-2 col-md-4 col-lg-2 mb-3 px-3">
+              <img class="img-fluid" src="../img/footer-brand-2.jpeg" alt="partner logo">
+            </li>
+            <li class="footer__brand col-6 col-sm-2 col-md-4 col-lg-2 mb-3 px-3">
+              <img class="img-fluid" src="../img/footer-brand-3.jpeg" alt="partner logo">
+            </li>
+            <li class="footer__brand col-6 col-sm-2 col-md-4 col-lg-2 mb-3 px-3">
+              <img class="img-fluid" src="../img/footer-brand-4.jpeg" alt="partner logo">
+            </li>
+            <li class="footer__brand col-6 col-sm-2 col-md-4 col-lg-2 mb-3 px-3">
+              <img class="img-fluid" src="../img/footer-brand-5.jpeg" alt="partner logo">
+            </li>
+            <li class="footer__brand col-6 col-sm-2 col-md-4 col-lg-2 mb-3 px-3">
+              <img class="img-fluid" src="../img/footer-brand-6.jpeg" alt="partner logo">
+            </li>
+          </ul>
+          <p class="mb-0 d-flex align-items-center"><small class="footer__small">
+            Powered by <img class="ml-2" src="../img/nasorg-logo.png" alt="NasOrg logo" width="75">
+          </small></p>
+        </div>
+  
+        <div class="col-md-6 col-lg-4">
+          <form class="d-flex flex-column">
+            <p class="font-weight-bold">
+              Subscribe to our newsletter
+            </p>
+            <input type="email" class="subscriptionForm__input" aria-label="your email" placeholder="Enter Your E-mail">
+            <button type="submit" class="subscriptionForm__button">Subscribe</button>
+            <div class="d-flex justify-content-between mt-4">
+              <p>Payment Methods</p>
+              <ul class="list d-flex">
+                <li class="mr-3">
+                  <img src="../img/payment-method-1.jpeg" alt="">
+                </li>
+                <li class="mr-3">
+                  <img src="../img/payment-method-2.jpeg" alt="">
+                </li>
+                <li>
+                  <img src="../img/payment-method-3.jpeg" alt="">
+                </li>
+              </ul>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

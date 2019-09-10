@@ -1,0 +1,14 @@
+@import '../modules/colors';
+
+.productDetails__oldPrice {
+  color: $grey;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.productDetails__newPrice {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.productDetails__description {
+  line-height: 1.7;
+}

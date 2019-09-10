@@ -1,0 +1,53 @@
+/* =================================
+Mixins
+==================================== */
+@mixin underline {
+  position: relative;
+  padding-bottom: 1rem;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background-color: #23282D;
+    height: .2rem;
+    width: 11rem;
+    @content;
+  }
+}
+
+/* titles */
+.title-1 {
+  font-size: 1.2rem;
+  letter-spacing: .8rem;
+}
+.title-2 {
+  font-size: 1.65rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* font weight */
+.font-weight-md {
+  font-weight: 500;
+}
+
+/* letter spacing */
+.letters-spaced-lg {
+  letter-spacing: .8rem;
+}
+.letters-spaced-md {
+  letter-spacing: .2rem;
+}
+
+/* title underline */
+.title-underline-left {
+  @include underline {
+    left: 0;
+  }
+}
+.title-underline-center {
+  @include underline {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

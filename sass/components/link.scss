@@ -1,0 +1,65 @@
+@import '../modules/colors';
+
+/* link --- */
+// modifiers
+.link_color_inherited {
+  color: inherit;
+}
+.link_decorationOnHover_none {
+  &:hover{
+    text-decoration: none;
+  }
+}
+.link_decoration_bottomBorder {
+  border-bottom: 1px solid;
+}
+
+/* call to action links ----- */
+/* (1) */
+.call-to-action-with-arrow {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .16rem;
+  color: inherit;
+
+  .fa-arrow-right {
+    transition: transform .3s;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: inherit;
+
+    .fa-arrow-right {
+      transform: translateX(.4rem);
+    }
+  }
+}
+// Modifiers
+.call-to-action-with-arrow_underline {
+  position: relative;
+  padding-bottom: .7rem;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: $dark;
+    height: .1rem;
+    width: 11rem;
+  }
+}
+
+/* (2) */
+.call-to-action-with-underline {
+  color: inherit;
+  border-bottom: 1px solid;
+  font-weight: 500;
+  padding-bottom: .25rem;
+  text-transform: uppercase;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,50 @@
+@import '../modules/breakpoints';
+
+/* list */
+.newArrivals__categoryList {
+  @media screen and (min-width: $break-l) {
+    margin-right: -1.5rem;
+  }
+}
+
+/* links */
+.newArrivals__categoryLink {
+  position: relative;
+  color: inherit;
+  font-weight: 500;
+  padding: .5rem 1rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #23282D;
+    height: .178rem;
+    width: 3.5rem;
+    opacity: 0;
+    transition: opacity .3s;
+  }
+
+  &.active {
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: inherit;
+
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  @media screen and (min-width: $break-l) {
+    font-size: 1.15rem;
+    padding: .7rem 1.5rem;
+  }
+} 

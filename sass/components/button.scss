@@ -1,0 +1,17 @@
+/* button --- */
+.productForm__btn {
+  font-size: 1.1rem;
+  font-weight: 500;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid;
+  border-radius: .15rem;
+}
+/* modifiers */
+.productForm__btn_bg_black {
+  color: #fff;
+  background-color: #111;
+}
+.productForm__btn_bg_grey {
+  background-color: #E5E5E5;
+}

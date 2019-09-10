@@ -1,0 +1,9 @@
+@import '../modules/breakpoints';
+
+.position-xl-absolute {
+  @media screen and (min-width: $break-xl) {
+    position: absolute;
+    left: 0; right: 0; 
+    z-index: 1
+  }
+}

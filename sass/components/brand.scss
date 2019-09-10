@@ -1,0 +1,39 @@
+@import '../modules/colors';
+
+.brand {
+  flex: 1 0 21rem;
+}
+
+/* title */
+.brand__title2 {
+  font-size: 1.65rem;
+}
+
+/* model images */
+.brand__model {
+  width: 100%; 
+  height: 20rem; 
+  object-fit: cover;
+}
+
+/* brand logo */
+.brand__logo {
+  padding: 1rem; 
+  background-color: #fff; 
+  left: 0; 
+  bottom: 0;
+}
+
+/* brand call-to-action btn */
+.brand__btn {
+  background-color: transparent; 
+  border: 1px solid; 
+  border-radius: .1rem;
+  transition: color .3s, background-color .3s;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: $dark;
+  }
+}

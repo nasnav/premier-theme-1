@@ -1,0 +1,74 @@
+@import '../modules/breakpoints';
+
+/* section */
+.categories {
+  padding-bottom: 5rem;
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+}
+
+/* category item */
+.category {
+  height: 17rem;
+  background-color: #555;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  flex: 100%;
+
+  &:nth-child(-n+3) {
+    margin-bottom: 1.8rem;
+  }
+
+  @media screen and (min-width: $break-s) {
+    flex: 40%;
+    &:nth-child(odd) {
+      margin-right: 1.8rem;
+    }
+    &:nth-child(-n+2) {
+      margin-bottom: 1.8rem;
+    }
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:nth-child(1) {
+    background-image: url(img/men-category.png);
+    background-position: bottom center;
+  }
+  &:nth-child(2) {
+    background-image: url(img/shoes-category.png);
+    background-position: bottom center;
+  }
+  &:nth-child(3) {
+    background-image: url(img/jeans-category.png);
+    background-position: 30% 75%;
+  }
+  &:nth-child(4) {
+    background-image: url(img/women-category.png);
+    background-position: center;
+  }
+}
+
+/* category name */
+.category__name {
+  position: absolute; 
+  top: 50%; left: 50%; 
+  transform: translate(-45%, -50%); 
+  color: #fff; 
+  text-transform: uppercase; 
+  letter-spacing: 1.5rem; 
+  font-weight: bold; 
+  font-size: 2rem; 
+  text-shadow: 0 0 4px rgba(0, 0, 0, 1);
+}
+
+/* call to action (shop now) */
+.category__call-to-action {
+  position: absolute; 
+  bottom: 0; right: 0; 
+  background-color: #fff; 
+  padding: 1rem 2rem;
+}

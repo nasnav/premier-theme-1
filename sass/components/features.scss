@@ -1,0 +1,15 @@
+@import '../modules/colors';
+
+.featureSection {
+  background-color: $darker;
+  padding-top: 1rem;
+}
+
+/* icons --- */
+.feature__iconContainer {
+  display: flex;
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 50%;
+  background-color: #fff;
+}
